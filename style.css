@@ -61,7 +61,7 @@ body, html {
     text-align: end;
 }
 
-.n5, .prize, .btn0, .btn1, .btn2, .btn3, .btn4, .btn5 {
+.prize, .btn0, .btn1, .btn2, .btn3, .btn4, .btn5 {
     background-color: aliceblue;
     color: #111; 
     width: fit-content;
@@ -70,6 +70,16 @@ body, html {
     font-size: 110%;
     border-radius: 2%;
     cursor: pointer;
+}
+
+.n5 {
+    background-color: aliceblue;
+    color: #111; 
+    width: fit-content;
+    padding: 0.5%;
+    text-shadow: 2px 2px 6px grey;
+    font-size: 110%;
+    border-radius: 2%;
 }
 
 .n6 {
