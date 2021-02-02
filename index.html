@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RockPaperScissorsLizardSpock</title>
+</head>
+<body>
+    <div class="bgimg1"></div>
+    <div class="caption">
+        <p class="title1">SASSO - CARTA - FORBICI - LIZARD - SPOCK</p>
+        <p class="title2">Scroll and Play</p>
+    </div>
+    <div class="overlap">
+        <p></p>
+        <blockquote cite="https://it.wikiquote.org/wiki/The_Big_Bang_Theory_(seconda_stagione)#Episodio_8,_L'espansione_di_Lizard_e_Spock" class="n2">
+            È cosa risaputa che nel gioco carta-forbice-sasso i giocatori che si frequentano 
+            assiduamente pareggiano l'80% delle volte per lo scarso numero di alternative. 
+            Suggerisco carta-forbice-sasso-lizard-Spock. È piuttosto semplice, guarda: le forbici 
+            tagliano la carta, la carta avvolge il sasso, il sasso uccide Lizard, Lizard avvelena 
+            Spock, Spock rompe le forbici, le forbici decapitano Lizard, Lizard mangia la carta, 
+            la carta invalida Spock, Spock vaporizza il sasso e – come è sempre stato – il sasso 
+            rompe le forbici.</blockquote> 
+        <p></p> 
+        <p class="n4">Sheldon Cooper - stagione II, episodio 8</p>
+    </div>
+    <div class="bgimg2"></div>
+    <div class="caption2">
+        <p class="title3"><label for="userName">Inserisci il tuo nome</label><input type="text" class="input1" id="userName" placeholder=""></p>
+        <p class="title4"><label for="opponentName">Inserisci il nome del tuo avversario</label><input type="text" class="input2" id="opponentName" placeholder=""></p>
+        <p class="title5"><input type="button" class="btn0" id="btn0" value="Gioca" onclick="welcome()"></p>
+        <p class="title6" id="welcome"></p>
+    </div>
+    <div class="overlap">
+        <span class="n5">Primo Round</span>
+        <p class="n6">Sasso, carta, forbici, lizard, Spock? </p>
+        <p id="turn1"></p>
+        <!--<input type="text" id="userInput-round1" placeholder="es. sasso">
+        <i class="fa fa-play-circle" onclick="play()" style="font-size: 220%;"></i>-->
+        <p id="endTurn1"></p>
+        <p id="scoresTurn1"></p>
+    </div>
+
+    <div class="bgimg1"></div>
+    <div class="overlap">
+        <span class="n5">Secondo Round</span>
+        <p class="n6">Sasso, carta, forbici, lizard, Spock? </p>
+        <p id="turn2"></p>
+        <p id="endTurn2"></p>
+        <p id="scoresTurn2"></p>
+    </div>
+    <div class="bgimg2"></div>
+    <div class="overlap">
+        <span class="n5">Terzo Round</span>
+        <p class="n6">Sasso, carta, forbici, lizard, Spock? </p>
+        <p id="turn3"></p>
+        <p id="endTurn3"></p>
+        <p id="scoresTurn3"></p>
+    </div>
+
+    <div class="bgimg1"></div>
+    <div class="overlap">
+        <span class="n5">Quarto Round</span>
+        <p class="n6">Sasso, carta, forbici, lizard, Spock? </p>
+        <p id="turn4"></p>
+        <p id="endTurn4"></p>
+        <p id="scoresTurn4"></p>
+    </div>
+    <div class="bgimg2"></div>
+    <div class="overlap">
+        <span class="n5">Quinto Round</span>
+        <p class="n6">Sasso, carta, forbici, lizard, Spock? </p>
+        <p id="turn5"></p>
+        <p id="endTurn5"></p>
+        <p id="scoresTurn5"></p>
+        <p id="endGame"></p>
+        <p id="collectPrize"></p>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-head">
+                <p style="margin-bottom: 0%;">Cominciavo a pensare che non avrei mai avuto l'occasione di dartelo.</p>
+                <p style="margin-top: 0%;">Ottimo lavoro!</p> 
+                <span class="close">&times;</span>
+            </header>
+            <img src="Me-wow.webp" alt="mewow stiker" width="188" height="311" style="margin:15%; margin-top:0%; margin-bottom:5%;">
+            <footer class="modal-foot">
+                <p style="margin-bottom: 0%;">Non è solo uno sticker, ma è lo sticker di un gattino che dice Mewow!</p>
+                <p style="text-align: right; margin-bottom: 0%;">Sheldon Cooper,</p>
+                <p style="text-align: right; margin-top: 0%">stagione VIII, episodio 14</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="bgimg1"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

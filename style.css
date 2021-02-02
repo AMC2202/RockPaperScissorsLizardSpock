@@ -1,0 +1,253 @@
+* {box-sizing:border-box}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Create the parallax scrolling effect */
+.bgimg1, .bgimg2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgimg1 {
+    /* The image used */
+    background-image: url('comics1.jpg');
+    height: 50%; 
+    opacity: 0.65;
+}
+
+.bgimg2 {
+    /* The image used */
+    background-image: url('comics2.jpg');
+    height: 50%; 
+    opacity: 0.45;
+}
+
+.overlap {
+    height: fit-content;
+    background-color:#111;
+    font-size:110%;
+    font-family: Helvetica;
+    color: aliceblue;
+    padding: 1.5%;
+    text-align: center;
+}
+
+.n2,.n3,.n4 {
+    font-weight: lighter;
+}
+
+.n1 {
+    font-size: 30%;
+}
+
+.n2 {
+    margin-bottom: 0%;
+    font-style: italic;
+}
+
+.n3 {
+    margin-top: 0%;
+    font-style: italic;
+}
+
+.n4 {
+    text-align: end;
+}
+
+.n5, .prize, .btn0, .btn1, .btn2, .btn3, .btn4, .btn5 {
+    background-color: aliceblue;
+    color: #111; 
+    width: fit-content;
+    padding: 0.5%;
+    text-shadow: 2px 2px 6px grey;
+    font-size: 110%;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.n6 {
+    font-weight: lighter;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.caption {
+    position: absolute;
+    /*left: 0;*/
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    /*color: #000;*/
+}
+
+.caption2 {
+    position: absolute;
+    /*left: 0;*/
+    top: 95%;
+    width: 100%;
+    text-align: center;
+    /*color: #000;*/
+}
+
+.caption p.title1, .caption p.title2 {
+    background-color: #111;
+    color: aliceblue;
+    letter-spacing: 8%;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.caption2 p.title3, .caption2 p.title4, .caption2 p.title5, .caption2 p.title6 {
+    background-color: #111;
+    color: aliceblue;
+    letter-spacing: 8%;
+    margin-right: 33%;
+    margin-left: 33%;
+}
+
+.caption p.title1 {
+    font-size: 110%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-top: 2%;
+}
+
+.caption p.title2 {
+    font-size: 95%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+}
+
+.caption2 p.title3 {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0.8%;
+}
+
+.caption2 p.title4 {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 1%;
+}
+
+.caption2 p.title5 {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 1%;
+}
+
+.caption2 p.title6 {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0.5%;
+    font-size: 100%;
+    /*text-shadow: 2px 2px 6px grey;*/
+}
+
+.input1 {
+    margin-left: 3%;
+    margin-right: -18.5%;
+}
+
+.input2 {
+    margin-left: 3%;
+}
+
+/*.btn1 {
+    background-color: aliceblue;
+}*/
+
+#userInput-round1, #userInput-round2, #userInput-round3, #userInput-round4, #userInput-round5 {
+    margin-right: 3%;
+    width: 15%;
+}
+
+i {
+    cursor: pointer; 
+    color: aliceblue;
+    margin-top: 1%;
+}
+
+i:hover {
+    color: grey;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #4d4d4d;
+    margin: 15% auto; /* 15% from the top and centered */
+    /*padding: 20px;
+    border: 1px solid #888;*/
+    width: 20%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5%;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-head {
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    font-family: Helvetica;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    border-radius: 20px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.modal-foot {
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    font-family: Helvetica;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    border-radius: 20px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+}
+
